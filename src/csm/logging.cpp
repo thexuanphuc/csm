@@ -38,11 +38,11 @@ void check_for_xterm_color() {
 /*	sm_info("Terminal type: '%s', colors: %d\n", term, xterm_color_available); */
 }
 
-#define XTERM_COLOR_RED "\e[1;37;41m"
-#define XTERM_COLOR_RESET "\e[0m"
+#define XTERM_COLOR_RED "\033[1;37;41m"
+#define XTERM_COLOR_RESET "\033[0m"
 
 #define XTERM_ERROR XTERM_COLOR_RED
-#define XTERM_DEBUG "\e[1;35;40m"
+#define XTERM_DEBUG "\033[1;35;40m"
 
 void sm_write_context();
 
